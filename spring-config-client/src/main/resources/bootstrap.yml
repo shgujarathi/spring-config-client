@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-config-client
+  profiles:
+    active: development
+  cloud:
+    config:
+      uri: http://spring-config-server:9000
+      enabled: true
+  zipkin:
+    base-url: http://zipkinserver:9411/
+server:
+  port: 8001
+management:
+  security:
+    enabled: false
